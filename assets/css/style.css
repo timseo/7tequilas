@@ -1,0 +1,1875 @@
+/*
+Template Name: Dine
+Theme URI: http://wearekllr.com/demos/dine
+Author: KLLR (Rodbor)
+Author URI: http://themes.wearekllr.com/
+Description: Bootstrap HTML template for restaurants and bars.
+Version: 1.0
+Support: https://kllr.ticksy.com
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+01. Typography
+02. Navigation
+03. Buttons
+04. Generic styles
+05. Intro
+06. Home
+07. Pages generic
+08. Menu page
+09. About page
+10. News page
+11. Single post
+12. Contact
+13. Reservation
+14. Footer
+15. Media Queries
+
+--------------------------------------------------------------*/
+/* chameleon custom styling */
+
+.menu-dinner {
+  width: 350px;
+}
+.menu-apps {
+  width: 250px;
+}
+
+h5 {
+  color: #000;
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+/* custom spacing */
+.space-10 {
+	margin: 0 0 10px;
+}
+
+.space-20 {
+	margin: 0 0 20px;
+}
+
+.space-30 {
+	margin: 0 0 30px;
+}
+
+.space-40 {
+	margin: 0 0 40px;
+}
+
+.space-50 {
+	margin: 0 0 50px;
+}
+
+.space-60 {
+	margin: 0 0 60px;
+}
+
+.space-70 {
+	margin: 0 0 70px;
+}
+
+.space-80 {
+	margin: 0 0 80px;
+}
+
+.space-90 {
+	margin: 0 0 90px;
+}
+
+.space-100 {
+	margin: 0 0 100px;
+}
+
+.space-150 {
+	margin: 0 0 150px;
+}
+
+.space-200 {
+	margin: 0 0 200px;
+}
+
+/*--------------------------------------------------------------
+01. Typography
+--------------------------------------------------------------*/
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  font-size: 105px;
+  font-weight: 700;
+}
+
+h1::first-letter {
+  font-size: 150px;
+}
+
+h2 {
+  color: #474747;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+h2::first-letter {
+  font-size: 100px;
+}
+
+p {
+  color: #474747;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.65em;
+}
+
+.heading {
+  position: relative;
+  display: table;
+}
+
+.heading-slogan {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 120px;
+  top: 70px;
+}
+
+
+
+/*--------------------------------------------------------------
+02. Navigation
+--------------------------------------------------------------*/
+
+.navbar-default {
+  background-color: transparent;
+  border-color: #e7e7e7;
+  border-radius: 0;
+  margin-top: 40px;
+  width: 780px;
+}
+
+.navbar-default .navbar-brand {
+  color: #fff;
+  font-size: 30px;
+  font-family: 'Lily Script One', cursive;
+  padding-top: 21px;
+  padding-left: 22px;
+  -webkit-transform: rotate(-12deg);
+  transform: rotate(-12deg);
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-top: 21px;
+  padding-bottom: 20px;
+  padding-left: 18px;
+  padding-right: 18px;
+  transition: all ease-in-out 300ms;
+  -webkit-transition: all ease-in-out 300ms;
+}
+
+.navbar-default .navbar-nav > li > a.button-link {
+  color: #474747;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar-default .navbar-nav > li > a.button-link:hover {
+  background-color: #fff;
+  color: #474747;
+  border: none;
+  margin: 0;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #fff;
+  -webkit-box-shadow: 0 -4px 0 0 #fff;
+  box-shadow: 0 -4px 0 0 #fff;
+}
+
+.navbar-default a.button-link {
+  background-color: #fff;
+  color: #474747;
+}
+
+/* dropdown */
+
+.dropdown-menu {
+  border-radius: 0;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.dropdown-menu > li > a {
+  color: #474747;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 16px 25px;
+  -webkit-transition: transform 0.5s;
+  transition: transform 0.5s;
+}
+
+.dropdown-menu > li > a:hover {
+  background-color: transparent;
+  transform: translate(4px);
+  -webkit-transform: translate(4px);
+}
+
+.dropdown-menu .divider {
+  margin: 5px 0;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  background-color: #fff;
+  color: #474747;
+}
+
+/* hamburger menu */
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+.navbar-toggle {
+  border: none;
+}
+
+.navbar-toggle .icon-bar {
+  width: 26px;
+  height: 3px;
+}
+
+
+
+/*--------------------------------------------------------------
+03. Buttons
+--------------------------------------------------------------*/
+
+.btn {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 16px 28px;
+  transition: all ease-in-out 300ms;
+  -webkit-transition: all ease-in-out 300ms;
+}
+
+.btn-border {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.btn-border:hover {
+  background-color: #fff;
+  color: #474747;
+}
+
+.btn-border-dark {
+  background-color: transparent;
+  color: #474747;
+  border: 2px solid #474747;
+}
+
+.btn-border-dark:hover {
+  background-color: #474747;
+  color: #fff;
+}
+
+.btn-white {
+  background-color: #fff;
+}
+
+
+
+/*--------------------------------------------------------------
+04. Generic styles
+--------------------------------------------------------------*/
+
+body {
+  overflow-x: hidden;
+}
+
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.social a {
+  color: #474747;
+  font-size: 20px;
+}
+
+.social li {
+  margin-right: 5px;
+}
+
+
+
+/*--------------------------------------------------------------
+05. Intro
+--------------------------------------------------------------*/
+
+.intro {
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+}
+
+.intro .content {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.intro h1 {
+  color: #fff;
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+.intro .heading {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro .heading-slogan {
+  color: #fff;
+}
+
+
+
+/*--------------------------------------------------------------
+06. Home
+--------------------------------------------------------------*/
+
+.about-home {
+  background-color: #fff;
+  padding-bottom: 120px;
+  margin-bottom: 600px;
+  position: relative;
+}
+
+.about-home header {
+  background-color: #f6f6f6;
+  padding: 30px 45px 65px 40px;
+  margin-top: -100px;
+  position: relative;
+  z-index: 4;
+}
+
+.about-home .heading-slogan {
+  top: 75px;
+  left: 105px;
+}
+
+.about-home p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.about-home .img-offset {
+  margin-top: -220px;
+  position: relative;
+  z-index: 3;
+}
+
+.about-home .img-offset2 {
+  margin-top: 220px;
+  margin-left: -320px;
+  position: relative;
+  z-index: 2;
+}
+
+.menu-home {
+  padding-bottom: 120px;
+  position: relative;
+  margin-bottom: 450px;
+}
+
+.menu-home header {
+  background-color: #f6f6f6;
+  padding: 30px 45px 65px 40px;
+  position: relative;
+  z-index: 4;
+}
+
+.menu-home .heading-slogan {
+  top: 85px;
+  left: 140px;
+}
+
+.menu-home img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu-home p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.menu-home .img-offset {
+  margin-top: -340px;
+  position: relative;
+  z-index: 2;
+}
+
+.menu-home .img-offset2 {
+  margin-top: -120px;
+  margin-left: -400px;
+  position: relative;
+  z-index: 3;
+}
+
+.reviews-home {
+  background-color: #f6f6f6;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  overflow-x: hidden;
+}
+
+.reviews-home .slide {
+  width: 560px;
+  margin-left: 150px;
+  margin-right: 50px;
+  position: relative;
+}
+
+.reviews-home .review-author {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.reviews-home .line {
+  background-color: #c1c1c1;
+  width: 50px;
+  height: 2px;
+}
+
+.slick-dots {
+  bottom: -70px;
+}
+
+.slick-dots li button:before {
+  font-size: 13px;
+}
+
+.slider-meta {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.slider-meta .rating {
+  color: #c1c1c1;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.slider-meta .rating i {
+  margin-right: 2px;
+}
+
+.slider-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.slick-slide {
+  opacity: 0.6;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+.news-home {
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+
+.news-home header {
+  margin-bottom: 80px;
+}
+
+.news-home .heading-slogan {
+  top: 58px;
+  left: 80px;
+}
+
+.post-preview-content {
+  border-bottom: 1px solid #c1c1c1;
+  border-right: 1px solid #c1c1c1;
+  margin-top: 15px;
+  display: flex;
+}
+
+.post-preview-content div {
+  display: inline-block;
+  margin: 0;
+}
+
+.post-preview-content .date {
+  color: #474747;
+  font-family: 'Playfair Display', serif;
+  font-size: 45px;
+  font-weight: 700;
+  border-right: 1px solid #c1c1c1;
+  margin: 0;
+  padding: 15px 20px 25px 25px;
+}
+
+.post-preview-content .date span {
+  font-family: 'Open Sans', sans-serif;
+  color: #ff6767;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: -10px;
+}
+
+.post-preview-content .text {
+  color: #474747;
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 15px 20px;
+}
+
+.post-preview-content .text span {
+  color: #c1c1c1;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.post-preview-content span {
+  display: block;
+}
+
+.post-preview2 {
+  margin-top: -120px;
+}
+
+
+/* Home alternate */
+
+.home-alt {
+  background-color: #fff;
+}
+
+.home-alt .about-home {
+  padding-top: 130px;
+  margin-bottom: 0;
+  padding-bottom: 100px;
+}
+
+.home-alt .about-home header {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.home-alt .about-home img {
+  margin-bottom: 30px;
+}
+
+.home-alt .menu-home {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.home-alt .post-preview2 {
+  margin-top: 0;
+}
+
+
+
+/*--------------------------------------------------------------
+07. Pages generic
+--------------------------------------------------------------*/
+
+.page-intro {
+  height: 800px;
+}
+
+.page-intro .content {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.page-intro h1 {
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.page-intro h1 span {
+  font-size: 150px;
+}
+
+.page-intro .heading {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-intro .heading-slogan {
+  color: #fff;
+}
+
+.no-intro .navbar-default .navbar-toggle .icon-bar {
+  background-color: #474747;
+}
+
+.no-intro .navbar-default .navbar-brand {
+  color: #474747;
+}
+
+.no-intro .navbar-default .navbar-nav li > a {
+  color: #474747;
+}
+
+.no-intro .navbar-default .navbar-nav li > a:hover {
+  -webkit-box-shadow: 0 -4px 0 0 #474747;
+  box-shadow: 0 -4px 0 0 #474747;
+}
+
+.no-intro .navbar-default a.button-link {
+  background-color: #474747;
+  color: #fff !important;
+}
+
+.no-intro .navbar-default a.button-link:hover {
+  background-color: #474747 !important;
+  color: #fff;
+}
+
+.no-intro .navbar-default .dropdown-menu {
+  background-color: #474747;
+}
+
+.no-intro .navbar-default .dropdown-menu > li > a {
+  color: #fff;
+}
+
+.no-intro .navbar-default .dropdown-menu .divider {
+  background-color: #606163;
+}
+
+.no-intro .navbar-default .navbar-nav > .open > a,
+.no-intro .navbar-default .navbar-nav > .open > a:focus,
+.no-intro .navbar-default .navbar-nav > .open > a:hover {
+  background-color: #474747;
+  color: #fff;
+}
+
+
+
+/*--------------------------------------------------------------
+08. Menu page
+--------------------------------------------------------------*/
+
+.menu-intro {
+  height: 850px;
+  min-height: 850px;
+}
+
+.menu {
+  padding-top: 90px;
+  padding-left: 70px;
+  padding-right: 70px;
+  min-height: 800px;
+  width: 60%;
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  top: 80px;
+}
+
+.menu p {
+  color: #fff;
+}
+
+.menu .nav-tabs {
+  border: none;
+}
+
+.menu .nav-tabs > li {
+  margin-right: 30px;
+  border: none;
+}
+
+.menu .nav-tabs > li > a {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0;
+  padding-top: 14px;
+  border: none;
+}
+
+.menu .nav > li > a:focus,
+  .menu .nav > li > a:hover {
+  background-color: transparent;
+}
+
+.menu .nav-tabs > li.active > a,
+  .menu .nav-tabs > li.active > a:focus,
+  .menu .nav-tabs > li.active > a:hover {
+  background-color: transparent;
+  color: #fff;
+  border-radius: 0;
+  border: none;
+  -webkit-box-shadow: 0 -4px 0 0 #fff;
+  box-shadow: 0 -4px 0 0 #fff;
+}
+
+.menu h3 {
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 45px;
+}
+
+.menu h3::first-letter {
+  font-size: 60px;
+}
+
+.menu .tab-content li {
+  margin-bottom: 30px;
+  padding-right: 100px;
+}
+
+.dish-title {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.dish-price {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  margin-top: -30px;
+  display: inline-block;
+}
+
+.dish-ingredients {
+  color: #4c4c4c;
+  font-size: 14px;
+}
+
+/* menu 2 */
+
+.menu-2-intro {
+  height: 500px;
+}
+
+.menu-2-intro h2 {
+  color: #fff;
+}
+
+.menu-content {
+  background-color: #fff;
+  margin-bottom: -100px;
+}
+
+.menu-2 {
+  top: -165px;
+  padding: 0;
+  position: relative;
+  min-height: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.menu-2 p {
+  color: #474747;
+}
+
+.menu-2 h3 {
+  margin-bottom: 90px;
+}
+
+.menu-2 .nav-tabs {
+  display: inline-block;
+}
+
+.menu-2 .tab-content li {
+  padding: 0;
+}
+
+.menu-2 .tab-pane ul {
+  /* display: inline-block; */
+  display: inline-grid;
+  margin-left: 35px;
+  margin-right: 35px;
+  text-align: left;
+}
+
+.menu-2 .dish-price {
+  font-size: 13px;
+  opacity: 0.5;
+}
+
+
+
+/*--------------------------------------------------------------
+09. About page
+--------------------------------------------------------------*/
+
+.about-intro .heading-slogan {
+  left: 165px;
+  top: 55px;
+}
+
+.about {
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 340px;
+}
+
+.about header {
+  background-color: #f6f6f6;
+  padding: 30px 75px 65px 75px;
+  position: relative;
+  z-index: 4;
+  margin-top: -120px;
+}
+
+.about header h2 {
+  margin-bottom: 30px;
+}
+
+.about header p {
+  margin-bottom: 30px;
+}
+
+.about .text {
+  font-size: 18px;
+}
+
+.about .img-offset {
+  margin-top: -400px;
+  position: relative;
+}
+
+.concept {
+  position: relative;
+  padding-bottom: 760px;
+}
+
+.concept .heading-slogan {
+  top: 60px;
+  left: 0;
+  right: 0;
+}
+
+.concept .img-offset2 {
+  margin-top: 100px;
+}
+
+.concept-text {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.awards {
+  background-color: #f6f6f6;
+  padding: 30px 50px 50px 60px;
+  width: 100%;
+  z-index: 3;
+  margin-top: -250px;
+}
+
+.awards .title {
+  color: #d8d8d8;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.awards .title::after {
+  background-color: #d8d8d8;
+  display: block;
+  content: "";
+  width: 30px;
+  height: 4px;
+}
+
+.awards .text {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.awards ul {
+  padding-left: 30px;
+}
+
+.awards li {
+  margin-bottom: 30px;
+}
+
+
+
+/*--------------------------------------------------------------
+00. News page
+--------------------------------------------------------------*/
+
+.news {
+  padding-top: 80px;
+  padding-bottom: 700px;
+}
+
+.news header {
+  margin-bottom: 80px;
+}
+
+.news .heading-slogan {
+  top: 58px;
+  left: 80px;
+}
+
+.news .post-preview {
+  margin-bottom: 80px;
+}
+
+
+
+/*--------------------------------------------------------------
+11. Single post
+--------------------------------------------------------------*/
+
+.single-post-intro {
+  height: 550px;
+}
+
+.single-post-intro .content {
+  text-align: left;
+}
+
+.single-post-intro h2 {
+  color: #fff;
+  margin-top: 80px;
+}
+
+.single-post {
+  background-color: #fff;
+}
+
+.single-post .date {
+  background-color: #fff;
+  font-size: 14px;
+  width: 140px;
+  height: 90px;
+  margin-top: -90px;
+  padding-top: 15px;
+  float: right;
+}
+
+.single-post .date .day {
+  color: #ff5c5c;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: -2px;
+  margin-left: 30px;
+}
+
+.single-post .date .month {
+  font-family: 'Playfair Display', serif;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1em;
+  text-align: center;
+}
+
+.single-post hr {
+  margin-top: 80px;
+  margin-bottom: 70px;
+}
+
+.single-post-content {
+  padding-top: 65px;
+}
+
+.single-post-content p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.single-post-content img {
+  margin-top: 30px;
+}
+
+.more-news {
+  padding-bottom: 160px;
+}
+
+.more-news h3 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+
+
+/*--------------------------------------------------------------
+12. Contact
+--------------------------------------------------------------*/
+
+.contact-intro {
+  height: 700px;
+}
+
+.contact {
+  background-color: #fff;
+}
+
+.contact-info {
+  padding-top: 40px;
+  padding-left: 50px;
+  margin-bottom: 31px;
+}
+
+.contact-info .left,
+  .contact-info .rigth {
+  display: inline-block;
+  float: left;
+}
+
+.contact-info .left {
+  margin-right: 60px;
+}
+
+.contact-info h4 {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.contact-info i, .contact-info p {
+  display: inline-block;
+}
+
+.contact-info i {
+  color: #474747;
+  font-size: 18px;
+  vertical-align: top;
+  margin-top: 6px;
+  margin-right: 10px;
+}
+
+.contact-info p {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-info li {
+  margin-bottom: 5px;
+}
+
+.contact-form {
+  margin-top: -70px;
+  padding: 55px 80px !important;
+}
+
+.contact-form .form-control {
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  background-color: transparent;
+  font-size: 40px;
+  font-weight: 700;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.contact-form input.form-control {
+  margin-bottom: 60px;
+  height: 60px;
+}
+
+.contact-form button {
+  margin-top: 30px;
+  float: right;
+}
+
+.contact-form ::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.contact-form :-moz-placeholder {
+    /* Firefox 18- */
+  color: #fff;
+}
+
+.contact-form ::-moz-placeholder {
+    /* Firefox 19+ */
+  color: #fff;
+}
+
+.contact-form :-ms-input-placeholder {
+  color: #fff;
+}
+
+.contact-1 .contact-form {
+  background-color: #2f3135;
+}
+
+.contact-2 {
+  background-color: #f6f6f6;
+}
+
+.contact-2 .contact-form {
+  background-color: #fff;
+}
+
+.contact-2 .contact-form .form-control {
+  color: #474747;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.contact-2 ::-webkit-input-placeholder {
+  color: #474747;
+}
+
+.contact-2 :-moz-placeholder {
+    /* Firefox 18- */
+  color: #474747;
+}
+
+.contact-2 ::-moz-placeholder {
+    /* Firefox 19+ */
+  color: #474747;
+}
+
+.contact-2 :-ms-input-placeholder {
+  color: #474747;
+}
+
+#map {
+  height: 380px;
+  width: 100%;
+}
+
+.gm-style-iw * {
+  display: block;
+  width: 100%;
+}
+
+.gm-style-iw h4,
+.gm-style-iw p {
+  margin: 0;
+  padding: 0;
+}
+
+.gm-style-iw a {
+  color: #4272db;
+}
+
+
+
+/*--------------------------------------------------------------
+13. Reservation
+--------------------------------------------------------------*/
+
+.reservation {
+  background-color: #303136;
+  padding-bottom: 100px;
+}
+
+.reservation .text {
+  color: #fff;
+  font-size: 14px;
+  margin-top: 80px;
+}
+
+.reservation .text a {
+  color: #ff8383;
+}
+
+.reservation form {
+  margin-top: 110px;
+}
+
+.reservation form p {
+  color: #636363;
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.reservation form .small-input {
+  width: 220px;
+}
+
+.reservation form .btn {
+  margin-top: 50px;
+}
+
+.reservation .form-control {
+  background-color: transparent;
+  color: #fff;
+  font-size: 40px;
+  border: none;
+  border-bottom: 1px solid #636363;
+  border-radius: 0;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.reservation ::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.reservation :-moz-placeholder {
+    /* Firefox 18- */
+  color: #fff;
+}
+
+.reservation ::-moz-placeholder {
+    /* Firefox 19+ */
+  color: #fff;
+}
+
+.reservation :-ms-input-placeholder {
+  color: #fff;
+}
+
+
+
+/*--------------------------------------------------------------
+14. Footer
+--------------------------------------------------------------*/
+
+footer {
+  background-color: #f6f6f6;
+  padding-top: 90px;
+}
+
+.about-footer .logo {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.about-footer .text {
+  font-size: 14px;
+  margin-bottom: 20px;
+  width: 75%;
+}
+
+.contact-footer li {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.8em;
+  margin-bottom: 16px;
+}
+
+.contact-footer i {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.reservation-footer p {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.reservation-footer i {
+  font-size: 16px;
+}
+
+.reservation-footer .hour {
+  margin-left: 20px;
+}
+
+.reservation-footer .btn {
+  margin-top: 20px;
+}
+
+.nav-footer {
+  background-color: #fff;
+  margin-top: 80px;
+  padding-top: 26px;
+  padding-bottom: 13px;
+}
+
+.nav-footer a {
+  color: #474747;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.nav-footer li {
+  margin-right: 20px;
+}
+
+p.copyright {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+
+
+/*--------------------------------------------------------------
+15. Media queries
+--------------------------------------------------------------*/
+
+@media only screen and (max-width: 1200px) {
+  .menu {
+    position: relative;
+    width: 80%;
+  }
+
+  .menu-intro {
+    height: auto;
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar-default {
+    width: 100%;
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    letter-spacing: 1px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .navbar-default .navbar-nav > li > a.button-link {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .about-home {
+    margin-bottom: 30px;
+  }
+
+  .about-home img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-home .img-offset,
+    .about-home .img-offset2 {
+    position: relative !important;
+  }
+
+  .about-home .img-offset {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .about-home .img-offset2 {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .menu-home {
+    margin-bottom: 50px;
+  }
+
+  .menu-home .img-offset,
+    .menu-home .img-offset2 {
+    position: relative !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .menu-home .img-offset {
+    margin-top: 20px;
+  }
+
+  .menu-home .img-offset2 {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .reviews-home .slide {
+    width: 550px;
+    margin-left: 50px;
+  }
+
+  p.copyright,
+  .nav-footer {
+    text-align: center;
+  }
+
+  .nav-footer li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  p.copyright {
+    margin-top: 20px;
+  }
+
+  .home-alt img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .news-home .heading {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .news-home img {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .news-home .post-preview2 {
+    position: relative !important;
+    margin-top: 60px;
+  }
+
+  .news-home .post-preview-content {
+    text-align: center;
+    border: none;
+    display: block;
+  }
+
+  .news-home .post-preview-content .date {
+    border: none;
+    display: block;
+  }
+
+  .news-home .post-preview-content .text {
+    padding-top: 5px;
+  }
+
+  .menu {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .about {
+    margin-bottom: 80px;
+  }
+
+  .about img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about .img-offset {
+    margin-top: 30px;
+    left: auto !important;
+    position: relative !important;
+  }
+
+  .concept {
+    padding-bottom: 90px;
+  }
+
+  .concept img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .concept .awards {
+    position: relative !important;
+    margin-top: 30px;
+  }
+
+  .concept .img-offset2 {
+    margin-top: 30px;
+    position: relative !important;
+  }
+
+  .concept-text {
+    margin-bottom: 30px;
+  }
+
+  .news {
+    padding-bottom: 90px;
+  }
+
+  .news-page .heading {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .news-page .post-preview {
+    position: relative !important;
+  }
+
+  .news-page img {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .news-page .post-preview2 {
+    position: relative !important;
+    margin-top: 60px;
+  }
+
+  .news-page .post-preview-content {
+    text-align: center;
+    border: none;
+    display: block;
+  }
+
+  .news-page .post-preview-content .date {
+    border: none;
+    display: block;
+  }
+
+  .news-page .post-preview-content .text {
+    padding-top: 5px;
+  }
+
+  .single-post-intro h2 {
+    font-size: 40px;
+    margin-top: 60px;
+  }
+
+  .single-post img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .reservation form p,
+  .reservation .form-control {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .reviews-home {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .reviews-home .slide {
+    width: 350px;
+    margin-left: 50px;
+  }
+
+  .slider-text {
+    font-size: 22px;
+  }
+
+  .about-home img,
+  .menu-home img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-intro .content {
+    margin-top: -50px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .about-intro .heading-slogan {
+    font-size: 14px;
+    position: relative;
+    left: auto;
+    top: 20px;
+  }
+
+  .more-news {
+    padding-bottom: 80px;
+  }
+
+  .more-news img {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .more-news .post-preview-content {
+    text-align: center;
+    border: none;
+    display: block;
+    margin-bottom: 50px;
+  }
+
+  .more-news .post-preview-content .date {
+    border: none;
+    display: block;
+  }
+
+  .more-news .post-preview-content .text {
+    padding-top: 5px;
+  }
+
+  .contact-intro .content {
+    margin-top: 0;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .contact-intro .heading-slogan {
+    font-size: 14px;
+    position: relative;
+    left: auto;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .about-footer .text {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-default {
+    border: none;
+    position: absolute;
+    z-index: 1000;
+    padding-right: 20px;
+  }
+
+  .navbar-default .navbar-brand {
+    margin-bottom: 10px;
+  }
+
+  .navbar-default .navbar-collapse {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    color: #474747;
+    padding-left: 30px;
+  }
+
+  .navbar-default .navbar-nav > li > a:hover {
+    color: #474747;
+  }
+
+  .navbar-default .navbar-nav > li > a.button-link {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .intro .content {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-top: -30px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  h1 {
+    font-size: 70px;
+  }
+
+  h1::first-letter {
+    font-size: 90px;
+  }
+
+  .intro .heading-slogan {
+    font-size: 14px;
+    position: relative;
+    top: 40px;
+    left: auto;
+  }
+
+  .nav-footer a {
+    letter-spacing: 1px;
+  }
+
+  .nav-footer li {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .menu-2-intro {
+    height: 300px;
+  }
+
+  .menu-2 {
+    top: 40px;
+  }
+
+  .menu-2 .nav-tabs > li > a {
+    color: #474747;
+  }
+
+  .menu-2 .nav-tabs > li.active > a,
+    .menu-2 .nav-tabs > li.active > a:focus,
+    .menu-2 .nav-tabs > li.active > a:hover {
+    color: #474747;
+    -webkit-box-shadow: 0 -4px 0 0 #474747;
+    box-shadow: 0 -4px 0 0 #474747;
+  }
+
+  .menu-2 h3 {
+    color: #474747;
+  }
+
+  .menu-content {
+    margin-bottom: 70px;
+  }
+
+  .about header {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .awards {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .awards ul {
+    padding-left: 0;
+  }
+
+  .contact-intro .heading-slogan {
+    top: 45px;
+  }
+
+  .contact-form {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .contact-form .form-control {
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .menu .nav-tabs li {
+    margin-right: 15px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-info i {
+    display: block;
+  }
+
+  .contact-info .left,
+    .contact-info .right {
+    display: block;
+    float: none;
+  }
+
+  .contact-info .left {
+    margin-bottom: 50px;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h1::first-letter {
+    font-size: 80px;
+  }
+
+  .reservation form p,
+  .reservation .form-control {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  h1::first-letter {
+    font-size: 60px;
+  }
+}
