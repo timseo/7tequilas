@@ -33,7 +33,16 @@ Support: https://kllr.ticksy.com
   width: 350px;
 }
 .menu-apps {
-  width: 250px;
+  width: 350px;
+}
+.menu-drinks {
+  width: 350px;
+}
+.menu-lunch {
+  width: 350px;
+}
+.menu-kids {
+  width: 350px;
 }
 
 h5 {
