@@ -183,6 +183,7 @@ p {
   padding-left: 22px;
   -webkit-transform: rotate(-12deg);
   transform: rotate(-12deg);
+  width: 200px;
 }
 
 .navbar-default .navbar-brand:hover {

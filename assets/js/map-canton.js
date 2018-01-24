@@ -2,7 +2,7 @@ google.maps.event.addDomListener(window, 'load', init);
 var map;
 function init() {
   var mapOptions = {
-    center: new google.maps.LatLng(40.764381,-73.97254),
+    center: new google.maps.LatLng(34.2507254,-84.480483),
     zoom: 15,
     zoomControl: false,
     disableDoubleClickZoom: false,
@@ -22,7 +22,7 @@ function init() {
   var mapElement = document.getElementById('map');
   var map = new google.maps.Map(mapElement, mapOptions);
   var locations = [
-['address', 'undefined', 'undefined', 'undefined', 'undefined', 40.7635371, -73.9722478, 'https://mapbuildr.com/assets/img/markers/solid-pin-black.png']
+['address', 'undefined', 'undefined', 'undefined', 'undefined', 34.2507254, -84.480483, 'https://mapbuildr.com/assets/img/markers/solid-pin-black.png']
   ];
   for (i = 0; i < locations.length; i++) {
 if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
