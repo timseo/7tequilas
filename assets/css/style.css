@@ -45,6 +45,10 @@ Support: https://kllr.ticksy.com
   width: 350px;
 }
 
+.footer-logo {
+  width: 175px;
+}
+
 h5 {
   color: #000;
   font-family: 'Playfair Display', serif;
