@@ -29,6 +29,14 @@ Support: https://kllr.ticksy.com
 --------------------------------------------------------------*/
 /* chameleon custom styling */
 
+/* @import url('https://fonts.googleapis.com/css?family=Mr+Dafoe|Shrikhand');
+ */
+
+/* font-family: 'Mr Dafoe', cursive;
+font-family: 'Shrikhand', cursive; */
+
+
+
 .menu-dinner {
   width: 350px;
 }
@@ -1426,7 +1434,7 @@ p.copyright {
   }
 
   .about-home {
-    margin-bottom: 30px;
+    margin-bottom: 400px;
   }
 
   .about-home img {
@@ -1648,6 +1656,7 @@ p.copyright {
 
   .about-intro .content {
     margin-top: -50px;
+    margin-bottom: 50px;
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
