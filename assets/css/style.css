@@ -125,7 +125,7 @@ h2 {
 }
 
 h1 {
-  font-size: 105px;
+  font-size: 53px;
   font-weight: 700;
 }
 
@@ -396,17 +396,17 @@ body {
 
 .about-home {
   background-color: #fff;
-  padding-bottom: 120px;
-  margin-bottom: 600px;
+  padding-bottom: 0px;
+  margin-bottom: 500px;
   position: relative;
 }
 
 .about-home header {
-  background-color: #f6f6f6;
+  background-color: rgba(245, 245, 245, 0.35);
   padding: 30px 45px 65px 40px;
   margin-top: -100px;
   position: relative;
-  z-index: 4;
+  z-index: 2;
 }
 
 .about-home .heading-slogan {
@@ -420,7 +420,7 @@ body {
 }
 
 .about-home .img-offset {
-  margin-top: -220px;
+  margin-top: -132px;
   position: relative;
   z-index: 3;
 }
@@ -1755,7 +1755,7 @@ p.copyright {
 
 @media only screen and (max-width: 640px) {
   h1 {
-    font-size: 70px;
+    font-size: 35px;
   }
 
   h1::first-letter {
