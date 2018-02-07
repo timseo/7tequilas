@@ -482,10 +482,13 @@ body {
 }
 
 .reviews-home {
-  background-color: #f6f6f6;
+  /* background-color: #f6f6f6; */
+  background-image: url("../images/review-back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 150px;
   padding-bottom: 100px;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .reviews-home .slide {
