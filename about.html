@@ -11,6 +11,13 @@
   <!-- Favicon -->
   <link href="assets/favicon.ico" rel="shortcut icon" />
   <link href="assets/apple-touch-icon.png" rel="apple-touch-icon" />
+  <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96">
+  <link rel="apple-touch-icon" href="older-iPhone.png"> // 120px
+  <link rel="apple-touch-icon" sizes="180x180" href="iPhone-6-Plus.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="iPad-Retina.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="iPad-Pro.png">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lily+Script+One%7COpen+Sans:400,600,700%7CPlayfair+Display:400,400i,700,700i" rel="stylesheet">
@@ -25,6 +32,8 @@
   <!-- Main CSS-->
   <link href="assets/css/style.css" rel="stylesheet" />
 
+
+
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -34,7 +43,7 @@
 </head>
 
 
-<body>
+<body itemscope itemtype="http://schema.org/Restaurant">
 
 <div class="animsition">
 
@@ -249,7 +258,7 @@
         </ul>
       </div> <!-- /.col-md-4 -->
 
-      <div class="col-md-4 col-sm-4 reservation-footer">
+      <div itemprop="openingHours" class="col-md-4 col-sm-4 reservation-footer">
         <h5>Hours</h5>
         <div class="space-20"></div>
         <p>Monday - Thursday</p>
