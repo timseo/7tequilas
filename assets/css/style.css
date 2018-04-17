@@ -143,12 +143,12 @@ h2 {
 }
 
 h1 {
-  font-size: 53px;
+  font-size: 40px;
   font-weight: 700;
 }
 
 h1::first-letter {
-  font-size: 150px;
+  font-size: 80px;
 }
 
 h2 {
@@ -368,6 +368,11 @@ body {
 .social a {
   color: #474747;
   font-size: 20px;
+}
+.social-home a {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 25px;
 }
 
 .social li {
