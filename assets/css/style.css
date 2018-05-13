@@ -40,11 +40,15 @@ font-family: 'Shrikhand', cursive; */
   --orange: #e67e25;
   --green: #687b58;
   --brown: #8a6d3b;
+  --white: #fff;
 
 }
 
 .green {
   color: var(--green);
+}
+.white {
+  color: var(--white);
 }
 
 .menu-dinner {
