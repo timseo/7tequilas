@@ -424,7 +424,7 @@ body {
 .about-home {
   background-color: #fff;
   padding-bottom: 0px;
-  margin-bottom: 500px;
+  margin-bottom: 250px;
   position: relative;
 }
 
@@ -1473,7 +1473,7 @@ p.copyright {
   }
 
   .about-home {
-    margin-bottom: 400px;
+    margin-bottom: 250px;
   }
 
   .about-home img {
